@@ -1,0 +1,142 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* RESPONSIVE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1vw;
+}
+/* Ancho en % y los altos en vh para que sea resposive */
+body {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 16px;
+    line-height: 1.6;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    align-items: center;
+    background: linear-gradient(to right, #337579, #63dae3);
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 2%;
+}
+
+aside {
+    background: linear-gradient(to right, #6B240C, #E48F45);
+    padding: 2vh;
+    height: 35vh;
+    margin-right: 5%;
+    padding-top: 7vh;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+section {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+figure  {
+    border: 1px solid black;
+    width: auto;
+    padding: 2%;
+    text-align: center;
+}
+figure img {
+    width: 80%;
+    height: 45vh;
+}
+
+#dobleFigure {
+    grid-column: span 2;
+}
+
+#dobleFigure figure img {
+    width: 400px;
+    height: 400px;
+}
+
+footer {
+    clear: both;
+    background-color: #265659;
+    color: #fff;
+    height: 20vh;
+    font-size: medium;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+footer address,
+footer h4,
+footer nav {
+    vertical-align: center;
+}
+
+footer address {
+    text-align: left;
+}
+
+footer h4 {
+    grid-column: span 2;
+    justify-content: center;
+    text-align: center;
+}
+
+footer nav {
+    justify-content: right;
+    text-align: right;
+}
+
+footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 2vh;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-grid;
+    padding: 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #fff;
+}
